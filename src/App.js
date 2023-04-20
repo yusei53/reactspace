@@ -5,6 +5,7 @@ import './App.css';
 import { InlineStyle } from './components/InlineStyle';
 import { Css } from './components/cssModules';
 import { StyledJsx } from './components/styledJsx';
+import { StyledComponent } from './components/StyledComponent';
 
 export function App() {
 
@@ -14,6 +15,7 @@ export function App() {
      <InlineStyle />
      <Css />
      <StyledJsx />
+     <StyledComponent />
     </div>
   );
 }
