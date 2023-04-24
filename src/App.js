@@ -1,22 +1,21 @@
-
+import {BrowserRouter} from "react-router-dom"
 
 import './App.css';
-
-import { InlineStyle } from './components/InlineStyle';
-import { Css } from './components/cssModules';
-import { StyledJsx } from './components/styledJsx';
-import { StyledComponent } from './components/StyledComponent';
+import { Home } from './home';
+import { Page } from './page';
+import { Page1 } from './page1';
 
 export function App() {
 
 
   return (
+    <BrowserRouter>
     <div className="App">
-     <InlineStyle />
-     <Css />
-     <StyledJsx />
-     <StyledComponent />
+      <Home />
+      <Page />
+      <Page1 />
     </div>
+    </BrowserRouter>
   );
 }
 
